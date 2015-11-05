@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A2D9F52AD6F858E7869F5B46D0C9FF4 /* Pods-ScalpAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D24D1AACC418F7A3EA11563FB5E36C /* Pods-ScalpAppTests-dummy.m */; };
+		6E579FF358AF2261C8682A7FA383EAA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		ABCDEFD018882CCFC916A8D4E115409D /* Pods-ScalpApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CB40AB96C62611C3EAD2262C7D1C6B /* Pods-ScalpApp-dummy.m */; };
+		B991A49F4C12A4F8462C02B69D83DB11 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2397EF8F783D2A4AD79ED1E4842359 /* Pods-dummy.m */; };
+		BD647EB3049B3EB4339612007E618ADC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D453F8D1E73A2CBEADCB3F27648754EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D929A3FE8B81A0685D21C2CBEB8C788D /* Pods-ScalpAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42507568A0F1DDC5A5046F2FA7B1C4A6 /* Pods-ScalpAppUITests-dummy.m */; };
+		E8414BE134E0C8E753BC72CA3EB520C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06AA4C3C4818996EF2E1B2D8BA374D8F /* Pods-ScalpAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScalpAppUITests-resources.sh"; sourceTree = "<group>"; };
+		16FCF74FA4D77130132C60F1E7283CD4 /* Pods-ScalpApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScalpApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1CC0AA081B2909DF2EF51EB0DDF5B355 /* libPods-ScalpAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScalpAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CDD5A17144C1184711AF2089D144741 /* Pods-ScalpAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScalpAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D9978B07E15BEF84F9DFBEDA3425997 /* Pods-ScalpApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScalpApp-resources.sh"; sourceTree = "<group>"; };
+		213B1724C62BE8BC65F92A9BC1A24B5B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		21D4C098841ECA024037E744079B1B31 /* libPods-ScalpAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScalpAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		305D9AF91639779EE1DC8D6AA90D20E3 /* Pods-ScalpAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScalpAppTests-resources.sh"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42507568A0F1DDC5A5046F2FA7B1C4A6 /* Pods-ScalpAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScalpAppUITests-dummy.m"; sourceTree = "<group>"; };
+		487CA4035A077F90E194A86C142C45A1 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C966BD749E5B8E98259593A55F6DD3C /* Pods-ScalpAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScalpAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51004ECE38F6A2D4B43A2B4DD212FEC0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		58D24D1AACC418F7A3EA11563FB5E36C /* Pods-ScalpAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScalpAppTests-dummy.m"; sourceTree = "<group>"; };
+		59ECFE0846EC95E3FF55B5AEE2B58038 /* Pods-ScalpApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScalpApp-frameworks.sh"; sourceTree = "<group>"; };
+		5B8ABF171911E7C3D9D1548021F815F2 /* Pods-ScalpAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScalpAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		612713C74C1AE7EBFF861C34115081EA /* Pods-ScalpAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScalpAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		71831DFB6A8756D52C08E4CA95F863A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		7394144558BFF2B5BB04F549DE14A810 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CBE7F7C0DB25E2B00F97BD2DF6F4CE /* Pods-ScalpAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScalpAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77CB40AB96C62611C3EAD2262C7D1C6B /* Pods-ScalpApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScalpApp-dummy.m"; sourceTree = "<group>"; };
+		870C099C82085382C3FC3C9947E17E6F /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91CF19E9EA9D908A3BDAD9CF0D7F4908 /* Pods-ScalpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScalpApp.release.xcconfig"; sourceTree = "<group>"; };
+		9866795E56B136DAFC04ABCBF17192C0 /* Pods-ScalpAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScalpAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9E17161130B27DB46F01569D1C6C5443 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD112236B5D922E9A30E2C431B06828D /* Pods-ScalpAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScalpAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		BEF04E6EA10B5FA7C49FD86EAB1FF15A /* Pods-ScalpAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScalpAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BF2397EF8F783D2A4AD79ED1E4842359 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		DDA918A6EE6406AD10A426CE4BED87D7 /* libPods-ScalpApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScalpApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAA606A6D140880C63D4531469F05D1 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		E01F8798A4A31CA83262E75126EDF2A7 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E83014B907989EB52DF56F842CA74BE9 /* Pods-ScalpAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScalpAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		EA5D5189A895444298AFBD2A791982A9 /* Pods-ScalpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScalpApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F2885732A468E8B779D9A04C46A20A2F /* Pods-ScalpAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScalpAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB3CF0E0B40C081ACE10D7409800A4BF /* Pods-ScalpApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScalpApp-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E78C4AC537A1782BCFD134B2B8940E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E579FF358AF2261C8682A7FA383EAA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F82DC4AD78404ABA2A3898358720E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D453F8D1E73A2CBEADCB3F27648754EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E288416142EC30BAD92E1906EBDA61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD647EB3049B3EB4339612007E618ADC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54E0990D736C8368ACB9AB30682FC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8414BE134E0C8E753BC72CA3EB520C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4218E5E7462C973E0EB3CB2BD02DB1BF /* Pods-ScalpAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C966BD749E5B8E98259593A55F6DD3C /* Pods-ScalpAppTests-acknowledgements.markdown */,
+				5B8ABF171911E7C3D9D1548021F815F2 /* Pods-ScalpAppTests-acknowledgements.plist */,
+				58D24D1AACC418F7A3EA11563FB5E36C /* Pods-ScalpAppTests-dummy.m */,
+				BD112236B5D922E9A30E2C431B06828D /* Pods-ScalpAppTests-frameworks.sh */,
+				305D9AF91639779EE1DC8D6AA90D20E3 /* Pods-ScalpAppTests-resources.sh */,
+				74CBE7F7C0DB25E2B00F97BD2DF6F4CE /* Pods-ScalpAppTests.debug.xcconfig */,
+				1CDD5A17144C1184711AF2089D144741 /* Pods-ScalpAppTests.release.xcconfig */,
+			);
+			name = "Pods-ScalpAppTests";
+			path = "Target Support Files/Pods-ScalpAppTests";
+			sourceTree = "<group>";
+		};
+		54578D246243B1EE9546116A22BEBF48 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A19B5672B465C5541F714BA4D502D6AE /* Pods */,
+				D12E7A9058A9362F4038382466800744 /* Pods-ScalpApp */,
+				4218E5E7462C973E0EB3CB2BD02DB1BF /* Pods-ScalpAppTests */,
+				5CD6D7A785BFDC2B182F91FEB794BD57 /* Pods-ScalpAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		552C04C99B9EC7FD6897DEAA23CA97B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				213B1724C62BE8BC65F92A9BC1A24B5B /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CD6D7A785BFDC2B182F91FEB794BD57 /* Pods-ScalpAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEF04E6EA10B5FA7C49FD86EAB1FF15A /* Pods-ScalpAppUITests-acknowledgements.markdown */,
+				612713C74C1AE7EBFF861C34115081EA /* Pods-ScalpAppUITests-acknowledgements.plist */,
+				42507568A0F1DDC5A5046F2FA7B1C4A6 /* Pods-ScalpAppUITests-dummy.m */,
+				E83014B907989EB52DF56F842CA74BE9 /* Pods-ScalpAppUITests-frameworks.sh */,
+				06AA4C3C4818996EF2E1B2D8BA374D8F /* Pods-ScalpAppUITests-resources.sh */,
+				F2885732A468E8B779D9A04C46A20A2F /* Pods-ScalpAppUITests.debug.xcconfig */,
+				9866795E56B136DAFC04ABCBF17192C0 /* Pods-ScalpAppUITests.release.xcconfig */,
+			);
+			name = "Pods-ScalpAppUITests";
+			path = "Target Support Files/Pods-ScalpAppUITests";
+			sourceTree = "<group>";
+		};
+		6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAA2E410E8C08C05E23E73307973F577 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */,
+				DDF65D117425E2AE10AD54DC0600D4C6 /* Products */,
+				54578D246243B1EE9546116A22BEBF48 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A19B5672B465C5541F714BA4D502D6AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				870C099C82085382C3FC3C9947E17E6F /* Pods-acknowledgements.markdown */,
+				487CA4035A077F90E194A86C142C45A1 /* Pods-acknowledgements.plist */,
+				BF2397EF8F783D2A4AD79ED1E4842359 /* Pods-dummy.m */,
+				E01F8798A4A31CA83262E75126EDF2A7 /* Pods-frameworks.sh */,
+				DFAA606A6D140880C63D4531469F05D1 /* Pods-resources.sh */,
+				71831DFB6A8756D52C08E4CA95F863A9 /* Pods.debug.xcconfig */,
+				51004ECE38F6A2D4B43A2B4DD212FEC0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		AAA2E410E8C08C05E23E73307973F577 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				552C04C99B9EC7FD6897DEAA23CA97B2 /* Frameworks */,
+				BA6CC55F7C3DC98EA32DB381E76D8A4B /* Resources */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		BA6CC55F7C3DC98EA32DB381E76D8A4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E17161130B27DB46F01569D1C6C5443 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D12E7A9058A9362F4038382466800744 /* Pods-ScalpApp */ = {
+			isa = PBXGroup;
+			children = (
+				16FCF74FA4D77130132C60F1E7283CD4 /* Pods-ScalpApp-acknowledgements.markdown */,
+				FB3CF0E0B40C081ACE10D7409800A4BF /* Pods-ScalpApp-acknowledgements.plist */,
+				77CB40AB96C62611C3EAD2262C7D1C6B /* Pods-ScalpApp-dummy.m */,
+				59ECFE0846EC95E3FF55B5AEE2B58038 /* Pods-ScalpApp-frameworks.sh */,
+				1D9978B07E15BEF84F9DFBEDA3425997 /* Pods-ScalpApp-resources.sh */,
+				EA5D5189A895444298AFBD2A791982A9 /* Pods-ScalpApp.debug.xcconfig */,
+				91CF19E9EA9D908A3BDAD9CF0D7F4908 /* Pods-ScalpApp.release.xcconfig */,
+			);
+			name = "Pods-ScalpApp";
+			path = "Target Support Files/Pods-ScalpApp";
+			sourceTree = "<group>";
+		};
+		DDF65D117425E2AE10AD54DC0600D4C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7394144558BFF2B5BB04F549DE14A810 /* libPods.a */,
+				DDA918A6EE6406AD10A426CE4BED87D7 /* libPods-ScalpApp.a */,
+				21D4C098841ECA024037E744079B1B31 /* libPods-ScalpAppTests.a */,
+				1CC0AA081B2909DF2EF51EB0DDF5B355 /* libPods-ScalpAppUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1469924FC52F60B0068FA24EEFCB3EFC /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C358AA8BB91700063133597D41C4E0E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				60DB2522D6809309FA2F3B04848E7536 /* Sources */,
+				2E78C4AC537A1782BCFD134B2B8940E0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 7394144558BFF2B5BB04F549DE14A810 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1A6053D6F03A96B75E0D97D0F4D85505 /* Pods-ScalpApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D245A768756F76475873F8C3C376E89 /* Build configuration list for PBXNativeTarget "Pods-ScalpApp" */;
+			buildPhases = (
+				C618DCE4C1B5F3B004B17E6EF3385A64 /* Sources */,
+				91E288416142EC30BAD92E1906EBDA61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ScalpApp";
+			productName = "Pods-ScalpApp";
+			productReference = DDA918A6EE6406AD10A426CE4BED87D7 /* libPods-ScalpApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		72A87270B36E219B4B55B940A3C2D166 /* Pods-ScalpAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CA2A926719F854584C5ECD17D59E42 /* Build configuration list for PBXNativeTarget "Pods-ScalpAppUITests" */;
+			buildPhases = (
+				25629EE2F37DF2CBE8F0DF889FE17E45 /* Sources */,
+				B54E0990D736C8368ACB9AB30682FC08 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ScalpAppUITests";
+			productName = "Pods-ScalpAppUITests";
+			productReference = 1CC0AA081B2909DF2EF51EB0DDF5B355 /* libPods-ScalpAppUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ADEE024F29C0ED31A7D604C5A2BCA565 /* Pods-ScalpAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F1FA12A972F309C1F59C8627E36C81 /* Build configuration list for PBXNativeTarget "Pods-ScalpAppTests" */;
+			buildPhases = (
+				80B11DA326777E9B4F74EE07ECEF658E /* Sources */,
+				3F82DC4AD78404ABA2A3898358720E13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ScalpAppTests";
+			productName = "Pods-ScalpAppTests";
+			productReference = 21D4C098841ECA024037E744079B1B31 /* libPods-ScalpAppTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DDF65D117425E2AE10AD54DC0600D4C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1469924FC52F60B0068FA24EEFCB3EFC /* Pods */,
+				1A6053D6F03A96B75E0D97D0F4D85505 /* Pods-ScalpApp */,
+				ADEE024F29C0ED31A7D604C5A2BCA565 /* Pods-ScalpAppTests */,
+				72A87270B36E219B4B55B940A3C2D166 /* Pods-ScalpAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25629EE2F37DF2CBE8F0DF889FE17E45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D929A3FE8B81A0685D21C2CBEB8C788D /* Pods-ScalpAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DB2522D6809309FA2F3B04848E7536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B991A49F4C12A4F8462C02B69D83DB11 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B11DA326777E9B4F74EE07ECEF658E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2D9F52AD6F858E7869F5B46D0C9FF4 /* Pods-ScalpAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C618DCE4C1B5F3B004B17E6EF3385A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCDEFD018882CCFC916A8D4E115409D /* Pods-ScalpApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		20484077B599C87CCA67E0622FC75CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5D5189A895444298AFBD2A791982A9 /* Pods-ScalpApp.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3C80C55FAF6D3EB7E77A671EB2D8948D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51004ECE38F6A2D4B43A2B4DD212FEC0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3D536EF6A67F9448CB744F969B115E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91CF19E9EA9D908A3BDAD9CF0D7F4908 /* Pods-ScalpApp.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4DA908CBA987F5A8FE6CA24ACCB9EA63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CBE7F7C0DB25E2B00F97BD2DF6F4CE /* Pods-ScalpAppTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7C5EB70F518313AEB0F7844554C26FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2885732A468E8B779D9A04C46A20A2F /* Pods-ScalpAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9EB645C612834738B99727720210C23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A02C3DBBB40BE2282B8174B6578AC8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71831DFB6A8756D52C08E4CA95F863A9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C757987C3C64A119910378AE102F9A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDD5A17144C1184711AF2089D144741 /* Pods-ScalpAppTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F029AA9091E2CC84B65B2B7A77B970D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9866795E56B136DAFC04ABCBF17192C0 /* Pods-ScalpAppUITests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB645C612834738B99727720210C23E /* Debug */,
+				E39CD1E764776175CB82EEC82A6C9948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C358AA8BB91700063133597D41C4E0E /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02C3DBBB40BE2282B8174B6578AC8C5 /* Debug */,
+				3C80C55FAF6D3EB7E77A671EB2D8948D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D245A768756F76475873F8C3C376E89 /* Build configuration list for PBXNativeTarget "Pods-ScalpApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20484077B599C87CCA67E0622FC75CC0 /* Debug */,
+				3D536EF6A67F9448CB744F969B115E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CA2A926719F854584C5ECD17D59E42 /* Build configuration list for PBXNativeTarget "Pods-ScalpAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5EB70F518313AEB0F7844554C26FC2 /* Debug */,
+				F029AA9091E2CC84B65B2B7A77B970D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96F1FA12A972F309C1F59C8627E36C81 /* Build configuration list for PBXNativeTarget "Pods-ScalpAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA908CBA987F5A8FE6CA24ACCB9EA63 /* Debug */,
+				C757987C3C64A119910378AE102F9A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
