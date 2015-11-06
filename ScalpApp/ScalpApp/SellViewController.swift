@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import Parse
 
 class SellViewController: UIViewController, CLLocationManagerDelegate {
 
