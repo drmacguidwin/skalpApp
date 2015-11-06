@@ -8,7 +8,7 @@
 
 import UIKit
 import GoogleMaps
-
+import Parse
 
 
 class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
@@ -61,9 +61,13 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         marker.map = viewMap
         }
     }
-}
-
-
     
-
-
+    @IBAction func logOutButtonPressed(sender: AnyObject) {
+        PFUser.logOut()
+        
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") as! UIViewController
+            self.presentViewController(viewController, animated: true, completion: nil)
+        })
+    }
+}

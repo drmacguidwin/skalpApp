@@ -23,8 +23,10 @@
 		BAE1C3481BEBDF2C0019FD70 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C33E1BEBDF2C0019FD70 /* Security.framework */; };
 		BAE1C3491BEBDF2C0019FD70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C33F1BEBDF2C0019FD70 /* StoreKit.framework */; };
 		BAE1C34A1BEBDF2C0019FD70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3401BEBDF2C0019FD70 /* SystemConfiguration.framework */; };
+		BAE1C34C1BEBE4E30019FD70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1C34B1BEBE4E30019FD70 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1C34D1BEBF8790019FD70 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BAEE8F821BE8012D00DBC188 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8F811BE8012D00DBC188 /* AppDelegate.swift */; };
-		BAEE8F841BE8012D00DBC188 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8F831BE8012D00DBC188 /* ViewController.swift */; };
+		BAEE8F841BE8012D00DBC188 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8F831BE8012D00DBC188 /* ViewController1.swift */; };
 		BAEE8F871BE8012D00DBC188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEE8F851BE8012D00DBC188 /* Main.storyboard */; };
 		BAEE8F891BE8012D00DBC188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEE8F881BE8012D00DBC188 /* Assets.xcassets */; };
 		BAEE8F8C1BE8012D00DBC188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEE8F8A1BE8012D00DBC188 /* LaunchScreen.storyboard */; };
@@ -67,9 +69,11 @@
 		BAE1C33E1BEBDF2C0019FD70 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BAE1C33F1BEBDF2C0019FD70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BAE1C3401BEBDF2C0019FD70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BAE1C34B1BEBE4E30019FD70 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BAE1C34D1BEBF8790019FD70 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BAEE8F7E1BE8012D00DBC188 /* ScalpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScalpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEE8F811BE8012D00DBC188 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAEE8F831BE8012D00DBC188 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAEE8F831BE8012D00DBC188 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		BAEE8F861BE8012D00DBC188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAEE8F881BE8012D00DBC188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAEE8F8B1BE8012D00DBC188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +125,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAE1C34F1BEBF8850019FD70 /* Login/SignupVCs */ = {
+			isa = PBXGroup;
+			children = (
+				BAE1C34B1BEBE4E30019FD70 /* LoginViewController.swift */,
+				BAE1C34D1BEBF8790019FD70 /* SignUpViewController.swift */,
+			);
+			name = Login/SignupVCs;
+			sourceTree = "<group>";
+		};
+		BAE1C3501BEBF8BB0019FD70 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA9558861BE9667C00BE99A2 /* TicketInfoDataModel.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		BAE1C3511BEBF8FE0019FD70 /* BuyVCs */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */,
+			);
+			name = BuyVCs;
+			sourceTree = "<group>";
+		};
+		BAE1C3521BEBF9370019FD70 /* SellVCs */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A9B901BE9109100E3BC04 /* SellViewController.swift */,
+			);
+			name = SellVCs;
+			sourceTree = "<group>";
+		};
 		BAEE8F751BE8012D00DBC188 = {
 			isa = PBXGroup;
 			children = (
@@ -147,14 +184,15 @@
 			isa = PBXGroup;
 			children = (
 				BAEE8F811BE8012D00DBC188 /* AppDelegate.swift */,
-				BAEE8F831BE8012D00DBC188 /* ViewController.swift */,
-				BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */,
-				BA8A9B901BE9109100E3BC04 /* SellViewController.swift */,
+				BAEE8F831BE8012D00DBC188 /* ViewController1.swift */,
+				BAE1C34F1BEBF8850019FD70 /* Login/SignupVCs */,
+				BAE1C3511BEBF8FE0019FD70 /* BuyVCs */,
+				BAE1C3521BEBF9370019FD70 /* SellVCs */,
+				BAE1C3501BEBF8BB0019FD70 /* DataModels */,
 				BAEE8F851BE8012D00DBC188 /* Main.storyboard */,
 				BAEE8F881BE8012D00DBC188 /* Assets.xcassets */,
 				BAEE8F8A1BE8012D00DBC188 /* LaunchScreen.storyboard */,
 				BAEE8F8D1BE8012D00DBC188 /* Info.plist */,
-				BA9558861BE9667C00BE99A2 /* TicketInfoDataModel.swift */,
 			);
 			path = ScalpApp;
 			sourceTree = "<group>";
@@ -387,7 +425,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAEE8F841BE8012D00DBC188 /* ViewController.swift in Sources */,
+				BAE1C34C1BEBE4E30019FD70 /* LoginViewController.swift in Sources */,
+				BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */,
+				BAEE8F841BE8012D00DBC188 /* ViewController1.swift in Sources */,
 				BA9558871BE9667C00BE99A2 /* TicketInfoDataModel.swift in Sources */,
 				BAEE8F821BE8012D00DBC188 /* AppDelegate.swift in Sources */,
 				BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */,
