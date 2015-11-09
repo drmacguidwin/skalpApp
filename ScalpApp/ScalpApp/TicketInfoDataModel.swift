@@ -7,22 +7,22 @@
 //
 
 import Foundation
-import Parse
-
-var allTickets = AllTickets()
-
-struct TicketInfo {
-    var event = String()
-    var price = String()
-    var latitude = Double()
-    var longitude = Double()
-}
-
-class AllTickets {
-    var ticketList = [TicketInfo]()
-    
-    func addTicketsToList(event: String, price: String, latitude: Double, longitude: Double) {
-        ticketList.append(TicketInfo(event: event, price: price, latitude: latitude, longitude: longitude))
-        
-    }
-}
+//import Parse
+//
+//var allTickets = AllTickets()
+//
+//struct TicketInfo {
+//    var event = String()
+//    var price = String()
+//    var latitude = Double()
+//    var longitude = Double()
+//}
+//
+//class AllTickets {
+//    var ticketList = [TicketInfo]()
+//    
+//    func addTicketsToList(event: String, price: String, latitude: Double, longitude: Double) {
+//        ticketList.append(TicketInfo(event: event, price: price, latitude: latitude, longitude: longitude))
+//        
+//    }
+//}

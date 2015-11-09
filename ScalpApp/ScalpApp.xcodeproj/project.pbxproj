@@ -11,7 +11,6 @@
 		BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B901BE9109100E3BC04 /* SellViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BA9558871BE9667C00BE99A2 /* TicketInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9558861BE9667C00BE99A2 /* TicketInfoDataModel.swift */; settings = {ASSET_TAGS = (); }; };
 		BAE1C3341BEBDED40019FD70 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3331BEBDED40019FD70 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		BAE1C3361BEBDEE00019FD70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3351BEBDEE00019FD70 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		BAE1C3411BEBDF2C0019FD70 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3371BEBDF2C0019FD70 /* AudioToolbox.framework */; };
@@ -58,7 +57,6 @@
 		BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
 		BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		BA8A9B901BE9109100E3BC04 /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
-		BA9558861BE9667C00BE99A2 /* TicketInfoDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInfoDataModel.swift; sourceTree = "<group>"; };
 		BAE1C3331BEBDED40019FD70 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BAE1C3351BEBDEE00019FD70 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		BAE1C3371BEBDF2C0019FD70 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -136,14 +134,6 @@
 			name = Login/SignupVCs;
 			sourceTree = "<group>";
 		};
-		BAE1C3501BEBF8BB0019FD70 /* DataModels */ = {
-			isa = PBXGroup;
-			children = (
-				BA9558861BE9667C00BE99A2 /* TicketInfoDataModel.swift */,
-			);
-			name = DataModels;
-			sourceTree = "<group>";
-		};
 		BAE1C3511BEBF8FE0019FD70 /* BuyVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +181,6 @@
 				BAE1C34F1BEBF8850019FD70 /* Login/SignupVCs */,
 				BAE1C3511BEBF8FE0019FD70 /* BuyVCs */,
 				BAE1C3521BEBF9370019FD70 /* SellVCs */,
-				BAE1C3501BEBF8BB0019FD70 /* DataModels */,
 				BAEE8F851BE8012D00DBC188 /* Main.storyboard */,
 				BAEE8F881BE8012D00DBC188 /* Assets.xcassets */,
 				BAEE8F8A1BE8012D00DBC188 /* LaunchScreen.storyboard */,
@@ -432,7 +421,6 @@
 				BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */,
 				BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */,
 				BAEE8F841BE8012D00DBC188 /* ViewController1.swift in Sources */,
-				BA9558871BE9667C00BE99A2 /* TicketInfoDataModel.swift in Sources */,
 				BAEE8F821BE8012D00DBC188 /* AppDelegate.swift in Sources */,
 				BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */,
 				BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */,

@@ -13,7 +13,9 @@ import GoogleMaps
 
 class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
     
-    var stuff = ""
+    var eventInfo = ""
+    var eventPrice = ""
+    var sellerInfo = ""
    
 
     @IBOutlet weak var displayGameInfo: UILabel!
@@ -23,7 +25,9 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayGameInfo.text = stuff
+        displayGameInfo.text = eventInfo
+        displayGamePrice.text = eventPrice
+        
     }
 
     override func didReceiveMemoryWarning() {

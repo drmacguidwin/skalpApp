@@ -18,6 +18,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
 
     var locationManager = CLLocationManager()
     var didFindMyLocation = false
+    var ticketInfoArray = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,15 +52,25 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             locationManager.stopUpdatingLocation()
         }
     }
-    //This function takes the information input from the seller, and creates a marker on buyer side map
+    //This function takes the information input from the seller, pulls it from Parse and creates a marker on buyer side map
     func placeTicketParker() {
-        for markers in allTickets.ticketList {
-        var marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake((markers.latitude), (markers.longitude))
-        marker.title = "Game: \(markers.event)"
-        marker.snippet = "Price: \(markers.price)"
-        marker.icon = GMSMarker.markerImageWithColor(UIColor.blueColor())
-        marker.map = viewMap
+        var query = PFQuery(className:"TicketInformationClass")
+        
+        query.findObjectsInBackgroundWithBlock { (tickets: [PFObject]?,error: NSError?) -> Void in
+            if error == nil {
+                for object:PFObject in tickets! {
+                    self.ticketInfoArray.append(object)
+                        for markers in self.ticketInfoArray {
+                        var marker = GMSMarker()
+                        marker.position = CLLocationCoordinate2DMake((markers.objectForKey("latitude") as? Double)!, (markers.objectForKey("longitude") as? Double)!)
+                        marker.title = markers.objectForKey("event") as? String
+                        marker.snippet = markers.objectForKey("price") as? String
+                        marker.icon = GMSMarker.markerImageWithColor(UIColor.blueColor())
+                        marker.map = self.viewMap
+                        var userForMarker = markers.objectForKey("user") as? String
+                    }
+                }
+            }
         }
     }
     //creates LogOut funcitonality
@@ -83,8 +94,9 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         let selectedMarker = sender
         if (segue.identifier == "segue2") {
         var yourNextViewController = segue.destinationViewController as! TicketInformationViewController
-            yourNextViewController.stuff = (selectedMarker?.title)!
-            
+            yourNextViewController.eventInfo = (selectedMarker?.title)!
+            yourNextViewController.eventPrice = (selectedMarker?.snippet)!
+            //yourNextViewController.sellerInfo = (selectedMarker?.)!
         }
     }
 }

@@ -16,6 +16,9 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var priceLabel: UITextField!
     
     var locationManager: CLLocationManager?
+    //var locValue: CLLocationCoordinate2D = (manager.location?.coordinate)!
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +44,27 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
             locationManager?.startUpdatingLocation()
             print("location services enabled")
         }
-    }
+}
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
                 
         let locValue: CLLocationCoordinate2D = (manager.location?.coordinate)!
         
-        allTickets.addTicketsToList(eventLabel.text!, price: priceLabel.text!, latitude: (locValue.latitude), longitude: (locValue.longitude))
+            let ticketInformation = PFObject(className: "TicketInformationClass")
+            ticketInformation["event"] = eventLabel.text!
+            ticketInformation["price"] = priceLabel.text!
+            ticketInformation["latitude"] = (locValue.latitude)
+            ticketInformation["longitude"] = (locValue.longitude)
+            ticketInformation["user"] = PFUser.currentUser()
+            ticketInformation.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    print("saved")
+                } else {
+                    print("error")
+                }
+            }
+        
         locationManager?.stopUpdatingLocation()
 
         eventLabel.text = nil
@@ -56,5 +73,6 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
         let alert = UIAlertController(title: "Your Tix Are Online", message: "Wait for Buyers!", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         presentViewController(alert, animated: true, completion: nil)
+        
     }
 }
