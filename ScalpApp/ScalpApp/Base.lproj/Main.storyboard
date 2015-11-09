@@ -202,11 +202,57 @@
                     </navigationItem>
                     <connections>
                         <outlet property="viewMap" destination="SbN-e2-rzS" id="qsp-8G-OhA"/>
+                        <segue destination="4er-gY-V8x" kind="push" identifier="segue2" id="Fix-F1-aXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aST-mY-2M1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hjv-V4-wXx"/>
             </objects>
-            <point key="canvasLocation" x="627" y="-1683"/>
+            <point key="canvasLocation" x="606" y="-1683"/>
+        </scene>
+        <!--Buy Tickets!-->
+        <scene sceneID="a1A-6Q-5vG">
+            <objects>
+                <viewController id="4er-gY-V8x" customClass="TicketInformationViewController" customModule="ScalpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DZW-iQ-ZCC"/>
+                        <viewControllerLayoutGuide type="bottom" id="utP-7r-bMF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lXq-Pr-l24">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OE7-Yb-o1k">
+                                <rect key="frame" x="20" y="273" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aej-f6-iZa">
+                                <rect key="frame" x="20" y="330" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seller Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So5-Rj-fD3">
+                                <rect key="frame" x="20" y="388" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Buy Tickets!" id="c7h-ha-eO1"/>
+                    <connections>
+                        <outlet property="displayGameInfo" destination="OE7-Yb-o1k" id="fn1-mh-3Ra"/>
+                        <outlet property="displayGamePrice" destination="aej-f6-iZa" id="a67-e5-jy3"/>
+                        <outlet property="displaySellerName" destination="So5-Rj-fD3" id="cFk-uH-4DN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzS-NY-Xkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-1683"/>
         </scene>
         <!--View Controller1-->
         <scene sceneID="wJ4-Qv-R3N">

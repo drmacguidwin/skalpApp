@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30E52F980E1ADA2EF908E75A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E06FE66633E713385185590 /* libPods.a */; };
+		BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B901BE9109100E3BC04 /* SellViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA9558871BE9667C00BE99A2 /* TicketInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9558861BE9667C00BE99A2 /* TicketInfoDataModel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		0E06FE66633E713385185590 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		936F4BD5A1581558CA3C597C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
 		BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		BA8A9B901BE9109100E3BC04 /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		BA9558861BE9667C00BE99A2 /* TicketInfoDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInfoDataModel.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */,
+				BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */,
 			);
 			name = BuyVCs;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE1C34C1BEBE4E30019FD70 /* LoginViewController.swift in Sources */,
+				BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */,
 				BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */,
 				BAEE8F841BE8012D00DBC188 /* ViewController1.swift in Sources */,
 				BA9558871BE9667C00BE99A2 /* TicketInfoDataModel.swift in Sources */,
