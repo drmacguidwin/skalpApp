@@ -23,5 +23,6 @@ class AllTickets {
     
     func addTicketsToList(event: String, price: String, latitude: Double, longitude: Double) {
         ticketList.append(TicketInfo(event: event, price: price, latitude: latitude, longitude: longitude))
+        
     }
 }

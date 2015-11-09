@@ -58,8 +58,3 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
         presentViewController(alert, animated: true, completion: nil)
     }
 }
-
-// allTickets.addTicketsToList(eventLabel.text!, price: priceLabel.text!, latitude: Double(latitudeField.text!)!, longitude: Double(longitudeField.text!)!)
-
-// print(Double(latitudeField.text!))
-// print(Double(longitudeField.text!))

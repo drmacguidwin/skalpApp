@@ -24,6 +24,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
+        viewMap.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +48,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             viewMap.camera = GMSCameraPosition(target: location.coordinate, zoom: 16, bearing: 0, viewingAngle: 0)
-           // locationManager.stopUpdatingLocation()
+            locationManager.stopUpdatingLocation()
         }
     }
     //This function takes the information input from the seller, and creates a marker on buyer side map
@@ -61,13 +62,29 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         marker.map = viewMap
         }
     }
-    
+    //creates LogOut funcitonality
     @IBAction func logOutButtonPressed(sender: AnyObject) {
         PFUser.logOut()
-        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") as! UIViewController
             self.presentViewController(viewController, animated: true, completion: nil)
         })
+    }
+    //segues to the TicketInformationViewController when the marker window is tapped
+    func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
+        var markerTitle = marker.title
+        var markerSnippet = marker.snippet
+        print(markerTitle)
+        print(markerSnippet)
+        performSegueWithIdentifier("segue2", sender: marker)
+}
+    //takes information from the selected marker, and prepares the info to be passed to the next view controller
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let selectedMarker = sender
+        if (segue.identifier == "segue2") {
+        var yourNextViewController = segue.destinationViewController as! TicketInformationViewController
+            yourNextViewController.stuff = (selectedMarker?.title)!
+            
+        }
     }
 }
