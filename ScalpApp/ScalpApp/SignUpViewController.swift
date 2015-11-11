@@ -38,6 +38,8 @@ class SignUpViewController: UIViewController {
         newUser.username = username
         newUser.password = password
         newUser.email = finalEmail
+        newUser["name"] = ""
+        newUser["phoneNumber"] = ""
         
         newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
             spinner.stopAnimating()
@@ -45,10 +47,10 @@ class SignUpViewController: UIViewController {
                 var alert = UIAlertView(title: "error", message: "\(error)", delegate: self, cancelButtonTitle: "Ok")
                 alert.show()
             } else {
-                var alert = UIAlertView(title: "Success", message: "Account Created", delegate: self, cancelButtonTitle: "Ok")
+                var alert = UIAlertView(title: "Success", message: "Account Created. We need a bit more info.", delegate: self, cancelButtonTitle: "Ok")
                 alert.show()
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as! UIViewController
+                    let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Edit") as! UIViewController
                     self.presentViewController(viewController, animated: true, completion: nil)
                 })
              }

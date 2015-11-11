@@ -27,6 +27,7 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         displayGameInfo.text = eventInfo
         displayGamePrice.text = eventPrice
+        displaySellerName.text = sellerInfo
         
     }
 
