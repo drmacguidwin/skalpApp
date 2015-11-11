@@ -55,71 +55,38 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     }
     //This function takes the information input from the seller, pulls it from Parse and creates a marker on buyer side map
     func placeTicketParker() {
-        
         var query = PFQuery(className:"TicketInformationClass")
-//        var userQuery = PFUser.query()
-//        userQuery?.whereKey("username", equalTo: (PFUser.currentUser()?.username!)!)
-        if let user = PFUser.currentUser() {
-            query.whereKey("soldBy", equalTo: user)
-        let actualUserName = PFUser.currentUser()?.username
-            print(actualUserName)
-        }
-        
-        
+        query.includeKey("soldBy")
         query.findObjectsInBackgroundWithBlock { (tickets: [PFObject]?,error: NSError?) -> Void in
             if error == nil {
-                for object:PFObject in tickets! {
-                    self.ticketInfoArray.append(object)
-                    print(self.ticketInfoArray.count)
-                        for markers in self.ticketInfoArray {
-                            
-                            if let user = PFUser.currentUser() {
-                                query.whereKey("soldBy", equalTo: user)
-                                let soldBy = markers["soldBy"]
-                                print(soldBy)
+                if let tickets = tickets as? [PFObject]! {
+                    for ticket in tickets {
+                        var user = ticket["soldBy"]
+                        var userName = user["name"]!
+                        var lat = ticket["latitude"]
+                        var long = ticket["longitude"]
+                        var event = ticket["event"]
+                        var price = ticket["price"]
+                        print(userName!)
+                        
                         var marker = GMSMarker()
-                        marker.position = CLLocationCoordinate2DMake((markers.objectForKey("latitude") as? Double)!, (markers.objectForKey("longitude") as? Double)!)
-                        marker.title = markers.objectForKey("event") as? String
-                        marker.snippet = markers.objectForKey("price") as? String
+                        marker.position = CLLocationCoordinate2DMake((lat as? Double)!, (long as? Double)!)
+                        marker.title = event as? String
+                        marker.snippet = price as? String
                         marker.icon = GMSMarker.markerImageWithColor(UIColor.blueColor())
                         marker.map = self.viewMap
-                            }
-                    
+                        marker.userData = userName
                     }
-                    
-//                    userQuery!.findObjectsInBackgroundWithBlock { (users: [PFObject]?, error: NSError?) -> Void in
-//                        if error == nil {
-//                            for object:PFObject in users! {
-//                                self.usersArray.append(object)
-//                                print(self.usersArray.count)
-//                                
-//                                
-//                            }
-//                        }
-//                    } //*//this is the last line we may need to x out
                 }
             }
         }
     }
 
-    
-//                            var findUser:PFQuery = PFUser.query()!
-//                            findUser.whereKey("objectID", equalTo: markers.objectForKey("user")!.objectId!!)
-//                            findUser.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-//                                if var objects = objects {
-//                                    let seller:PFUser = (objects as NSArray).lastObject as! PFUser
-//                                    print(markers.objectForKey("user") as? String)
-//                                }
-//                                
-//                                }
-                
-                    
-
-
     //segues to the TicketInformationViewController when the marker window is tapped
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
         var markerTitle = marker.title
         var markerSnippet = marker.snippet
+        var markerSeller = marker.userData
         print(markerTitle)
         print(markerSnippet)
         performSegueWithIdentifier("segueToBuyTickets", sender: marker)
@@ -131,10 +98,10 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         var yourNextViewController = segue.destinationViewController as! TicketInformationViewController
             yourNextViewController.eventInfo = (selectedMarker?.title)!
             yourNextViewController.eventPrice = (selectedMarker?.snippet)!
-           // yourNextViewController.sellerInfo = (selectedMarker?.objectForKey("user") as? String)!
+            yourNextViewController.sellerInfo = (selectedMarker?.userData)! as! String
         }
     }
-    
+    //I changed the name of the button so it is a bit confusing, but this sends us to our 'user profile' vc
     @IBAction func userInfoMenuButtonPressed(sender: AnyObject) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileFirst") as! UIViewController
