@@ -55,7 +55,7 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
             ticketInformation["price"] = priceLabel.text!
             ticketInformation["latitude"] = (locValue.latitude)
             ticketInformation["longitude"] = (locValue.longitude)
-            ticketInformation["user"] = PFUser.currentUser()
+            ticketInformation["soldBy"] = PFUser.currentUser()
             ticketInformation.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {

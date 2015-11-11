@@ -11,6 +11,11 @@
 		BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B901BE9109100E3BC04 /* SellViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BACFA9FB1BF271DA0057F3BF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FA1BF271DA0057F3BF /* UserInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BACFA9FD1BF273500057F3BF /* UserTicketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FC1BF273500057F3BF /* UserTicketListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BACFA9FF1BF2748F0057F3BF /* EditUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FE1BF2748F0057F3BF /* EditUserInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BACFAA011BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFAA001BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift */; settings = {ASSET_TAGS = (); }; };
+		BACFAA031BF2F9150057F3BF /* NavBarViewControllerForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFAA021BF2F9150057F3BF /* NavBarViewControllerForProfile.swift */; settings = {ASSET_TAGS = (); }; };
 		BAE1C3341BEBDED40019FD70 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3331BEBDED40019FD70 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		BAE1C3361BEBDEE00019FD70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3351BEBDEE00019FD70 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		BAE1C3411BEBDF2C0019FD70 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3371BEBDF2C0019FD70 /* AudioToolbox.framework */; };
@@ -57,6 +62,11 @@
 		BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
 		BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		BA8A9B901BE9109100E3BC04 /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
+		BACFA9FA1BF271DA0057F3BF /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		BACFA9FC1BF273500057F3BF /* UserTicketListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTicketListViewController.swift; sourceTree = "<group>"; };
+		BACFA9FE1BF2748F0057F3BF /* EditUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserInfoViewController.swift; sourceTree = "<group>"; };
+		BACFAA001BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarViewControllerForLogin.swift; sourceTree = "<group>"; };
+		BACFAA021BF2F9150057F3BF /* NavBarViewControllerForProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarViewControllerForProfile.swift; sourceTree = "<group>"; };
 		BAE1C3331BEBDED40019FD70 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BAE1C3351BEBDEE00019FD70 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		BAE1C3371BEBDF2C0019FD70 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -125,11 +135,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BACFA9F91BF271910057F3BF /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BACFA9FA1BF271DA0057F3BF /* UserInfoViewController.swift */,
+				BACFA9FC1BF273500057F3BF /* UserTicketListViewController.swift */,
+			);
+			name = UserInfo;
+			sourceTree = "<group>";
+		};
 		BAE1C34F1BEBF8850019FD70 /* Login/SignupVCs */ = {
 			isa = PBXGroup;
 			children = (
 				BAE1C34B1BEBE4E30019FD70 /* LoginViewController.swift */,
 				BAE1C34D1BEBF8790019FD70 /* SignUpViewController.swift */,
+				BACFA9FE1BF2748F0057F3BF /* EditUserInfoViewController.swift */,
 			);
 			name = Login/SignupVCs;
 			sourceTree = "<group>";
@@ -178,6 +198,9 @@
 			children = (
 				BAEE8F811BE8012D00DBC188 /* AppDelegate.swift */,
 				BAEE8F831BE8012D00DBC188 /* ViewController1.swift */,
+				BACFAA001BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift */,
+				BACFAA021BF2F9150057F3BF /* NavBarViewControllerForProfile.swift */,
+				BACFA9F91BF271910057F3BF /* UserInfo */,
 				BAE1C34F1BEBF8850019FD70 /* Login/SignupVCs */,
 				BAE1C3511BEBF8FE0019FD70 /* BuyVCs */,
 				BAE1C3521BEBF9370019FD70 /* SellVCs */,
@@ -417,13 +440,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACFAA031BF2F9150057F3BF /* NavBarViewControllerForProfile.swift in Sources */,
 				BAE1C34C1BEBE4E30019FD70 /* LoginViewController.swift in Sources */,
+				BACFA9FD1BF273500057F3BF /* UserTicketListViewController.swift in Sources */,
+				BACFA9FB1BF271DA0057F3BF /* UserInfoViewController.swift in Sources */,
 				BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */,
 				BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */,
 				BAEE8F841BE8012D00DBC188 /* ViewController1.swift in Sources */,
 				BAEE8F821BE8012D00DBC188 /* AppDelegate.swift in Sources */,
 				BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */,
+				BACFA9FF1BF2748F0057F3BF /* EditUserInfoViewController.swift in Sources */,
 				BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */,
+				BACFAA011BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
