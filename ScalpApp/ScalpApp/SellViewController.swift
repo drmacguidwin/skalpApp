@@ -16,9 +16,6 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var priceLabel: UITextField!
     
     var locationManager: CLLocationManager?
-    //var locValue: CLLocationCoordinate2D = (manager.location?.coordinate)!
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +44,12 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
 }
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
+        let eventDate = location?.timestamp
+        let howRecent = eventDate?.timeIntervalSinceNow
+        
+        print(location)
+        print(eventDate)
+        print(howRecent)
                 
         let locValue: CLLocationCoordinate2D = (manager.location?.coordinate)!
         
@@ -56,6 +59,7 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
             ticketInformation["latitude"] = (locValue.latitude)
             ticketInformation["longitude"] = (locValue.longitude)
             ticketInformation["soldBy"] = PFUser.currentUser()
+            ticketInformation["status"] = false
             ticketInformation.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
