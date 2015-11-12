@@ -27,6 +27,9 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         viewMap.delegate = self
+        
+        placeTicketParker()
+        viewMap.reloadInputViews()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +37,10 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     }
     
     override func viewWillAppear(animated: Bool) {
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        viewMap.delegate = self
+        
         placeTicketParker()
         viewMap.reloadInputViews()
     }
@@ -61,21 +68,36 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             if error == nil {
                 if let tickets = tickets as? [PFObject]! {
                     for ticket in tickets {
+                        
                         var user = ticket["soldBy"]
                         var userName = user["name"]!
                         var lat = ticket["latitude"]
                         var long = ticket["longitude"]
                         var event = ticket["event"]
                         var price = ticket["price"]
+                        var status = ticket["status"] as! Bool
+                        var objectid = ticket.objectId
+                        var userNameAndObjectID = [userName!, objectid!]
+                        print(userNameAndObjectID)
+                        print(objectid)
+                        
+                        print("ticket has been sold: \(status)")
+                        print(status)
                         print(userName!)
+                        if status == false {
                         
                         var marker = GMSMarker()
                         marker.position = CLLocationCoordinate2DMake((lat as? Double)!, (long as? Double)!)
                         marker.title = event as? String
                         marker.snippet = price as? String
-                        marker.icon = GMSMarker.markerImageWithColor(UIColor.blueColor())
+                        //marker.icon = GMSMarker.markerImageWithColor(UIColor.blueColor())
+                        marker.icon = UIImage(named: "ticketx2")
                         marker.map = self.viewMap
-                        marker.userData = userName
+                        marker.userData = userNameAndObjectID
+                        //marker.opacity = 0.0
+                        } else if status == true {
+                            print("not showing the marker because the ticket is sold: \(status)")
+                        }
                     }
                 }
             }
@@ -98,7 +120,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         var yourNextViewController = segue.destinationViewController as! TicketInformationViewController
             yourNextViewController.eventInfo = (selectedMarker?.title)!
             yourNextViewController.eventPrice = (selectedMarker?.snippet)!
-            yourNextViewController.sellerInfo = (selectedMarker?.userData)! as! String
+            yourNextViewController.sellerInfo = (selectedMarker?.userData)! as! NSArray //as! String
         }
     }
     //I changed the name of the button so it is a bit confusing, but this sends us to our 'user profile' vc

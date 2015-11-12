@@ -15,7 +15,7 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
     
     var eventInfo = ""
     var eventPrice = ""
-    var sellerInfo = ""
+    var sellerInfo = []
    
 
     @IBOutlet weak var displayGameInfo: UILabel!
@@ -27,7 +27,8 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         displayGameInfo.text = eventInfo
         displayGamePrice.text = eventPrice
-        displaySellerName.text = sellerInfo
+        displaySellerName.text = sellerInfo[0] as! String
+        print(sellerInfo[1])
         
     }
 
@@ -42,12 +43,32 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
         })
     }
     
-    
+    func findAndDeleteRowInParse() {
+        var query = PFQuery(className:"TicketInformationClass")
+        query.findObjectsInBackgroundWithBlock { (tickets: [PFObject]?,error: NSError?) -> Void in
+            if error == nil {
+                let objectIdString:String = self.sellerInfo[1] as! String
+                if let tickets = tickets as? [PFObject]! {
+                    for ticket in tickets {
+                        if ticket.objectId == objectIdString {
+                            ticket["status"] = true
+                            ticket.deleteInBackground()
+                            ticket.saveInBackground()
+                        } else {
+                            print("this didn't delete")
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     @IBAction func buyTicketsButtonPressed(sender: AnyObject) {
         let alert = UIAlertController(title: "If You Have Exchanged Tickets With the Seller", message: "Press 'Buy' To Complete Transaction!", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "BUY", style: UIAlertActionStyle.Default, handler: { action in
             print("you clicked buy")
+            self.findAndDeleteRowInParse()
+            
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as! UIViewController
                 self.presentViewController(viewController, animated: true, completion: nil)
@@ -59,4 +80,5 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
         presentViewController(alert, animated: true, completion: nil)
 
     }
+
 }
