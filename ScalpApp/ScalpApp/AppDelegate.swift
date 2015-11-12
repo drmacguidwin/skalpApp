@@ -16,6 +16,8 @@ import Bolts
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -28,6 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 69.0/255.0, green: 104.0/255.0, blue: 231/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont(name: "AmericanTypewriter-Bold", size: 20)!]
+       // UITabBar.appearance().barTintColor = UIColor(red: 153.0/255.0, green: 194.0/255.0, blue: 231.0/255.0, alpha: 1.0)
+        UITabBar.appearance().tintColor = UIColor.blueColor()
+
         
         return true
     }

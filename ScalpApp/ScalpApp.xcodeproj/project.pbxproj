@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		30E52F980E1ADA2EF908E75A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E06FE66633E713385185590 /* libPods.a */; };
+		BA4C2DE11BF456F600291AEF /* ticketx1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4C2DDE1BF456F600291AEF /* ticketx1.png */; settings = {ASSET_TAGS = (); }; };
+		BA4C2DE21BF456F600291AEF /* ticketx2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4C2DDF1BF456F600291AEF /* ticketx2.png */; settings = {ASSET_TAGS = (); }; };
+		BA4C2DE31BF456F600291AEF /* ticketx4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4C2DE01BF456F600291AEF /* ticketx4.png */; settings = {ASSET_TAGS = (); }; };
 		BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B901BE9109100E3BC04 /* SellViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -37,6 +40,8 @@
 		BAEE8F8C1BE8012D00DBC188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEE8F8A1BE8012D00DBC188 /* LaunchScreen.storyboard */; };
 		BAEE8F971BE8012D00DBC188 /* ScalpAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8F961BE8012D00DBC188 /* ScalpAppTests.swift */; };
 		BAEE8FA21BE8012D00DBC188 /* ScalpAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8FA11BE8012D00DBC188 /* ScalpAppUITests.swift */; };
+		BAF661F81BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF661F71BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift */; settings = {ASSET_TAGS = (); }; };
+		BAF661FA1BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF661F91BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,9 @@
 /* Begin PBXFileReference section */
 		0E06FE66633E713385185590 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		936F4BD5A1581558CA3C597C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4C2DDE1BF456F600291AEF /* ticketx1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticketx1.png; path = ../../../../../../../Desktop/ticketx1.png; sourceTree = "<group>"; };
+		BA4C2DDF1BF456F600291AEF /* ticketx2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticketx2.png; path = ../../../../../../../Desktop/ticketx2.png; sourceTree = "<group>"; };
+		BA4C2DE01BF456F600291AEF /* ticketx4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticketx4.png; path = ../../../../../../../Desktop/ticketx4.png; sourceTree = "<group>"; };
 		BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
 		BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		BA8A9B901BE9109100E3BC04 /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +102,8 @@
 		BAEE8F9D1BE8012D00DBC188 /* ScalpAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalpAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEE8FA11BE8012D00DBC188 /* ScalpAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalpAppUITests.swift; sourceTree = "<group>"; };
 		BAEE8FA31BE8012D00DBC188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF661F71BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarViewControllerForCreateAccount.swift; sourceTree = "<group>"; };
+		BAF661F91BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarViewControllerForNameAndNumber.swift; sourceTree = "<group>"; };
 		C906EFAFBBE35A28BF313754 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +145,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA4C2DDD1BF456D800291AEF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BA4C2DDE1BF456F600291AEF /* ticketx1.png */,
+				BA4C2DDF1BF456F600291AEF /* ticketx2.png */,
+				BA4C2DE01BF456F600291AEF /* ticketx4.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		BACFA9F91BF271910057F3BF /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +220,8 @@
 				BAEE8F831BE8012D00DBC188 /* ViewController1.swift */,
 				BACFAA001BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift */,
 				BACFAA021BF2F9150057F3BF /* NavBarViewControllerForProfile.swift */,
+				BAF661F71BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift */,
+				BAF661F91BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift */,
 				BACFA9F91BF271910057F3BF /* UserInfo */,
 				BAE1C34F1BEBF8850019FD70 /* Login/SignupVCs */,
 				BAE1C3511BEBF8FE0019FD70 /* BuyVCs */,
@@ -207,6 +229,7 @@
 				BAEE8F851BE8012D00DBC188 /* Main.storyboard */,
 				BAEE8F881BE8012D00DBC188 /* Assets.xcassets */,
 				BAEE8F8A1BE8012D00DBC188 /* LaunchScreen.storyboard */,
+				BA4C2DDD1BF456D800291AEF /* Images */,
 				BAEE8F8D1BE8012D00DBC188 /* Info.plist */,
 			);
 			path = ScalpApp;
@@ -365,7 +388,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4C2DE11BF456F600291AEF /* ticketx1.png in Resources */,
 				BAEE8F8C1BE8012D00DBC188 /* LaunchScreen.storyboard in Resources */,
+				BA4C2DE21BF456F600291AEF /* ticketx2.png in Resources */,
+				BA4C2DE31BF456F600291AEF /* ticketx4.png in Resources */,
 				BAEE8F891BE8012D00DBC188 /* Assets.xcassets in Resources */,
 				BAEE8F871BE8012D00DBC188 /* Main.storyboard in Resources */,
 			);
@@ -442,11 +468,13 @@
 			files = (
 				BACFAA031BF2F9150057F3BF /* NavBarViewControllerForProfile.swift in Sources */,
 				BAE1C34C1BEBE4E30019FD70 /* LoginViewController.swift in Sources */,
+				BAF661F81BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift in Sources */,
 				BACFA9FD1BF273500057F3BF /* UserTicketListViewController.swift in Sources */,
 				BACFA9FB1BF271DA0057F3BF /* UserInfoViewController.swift in Sources */,
 				BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */,
 				BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */,
 				BAEE8F841BE8012D00DBC188 /* ViewController1.swift in Sources */,
+				BAF661FA1BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift in Sources */,
 				BAEE8F821BE8012D00DBC188 /* AppDelegate.swift in Sources */,
 				BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */,
 				BACFA9FF1BF2748F0057F3BF /* EditUserInfoViewController.swift in Sources */,
