@@ -84,5 +84,5 @@ class UserTicketListViewController: UITableViewController {
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
             ticket.saveInBackground()
         }
-}
+    }
 }

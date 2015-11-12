@@ -67,7 +67,7 @@ class UserInfoViewController: UIViewController {
     
     @IBAction func editProfileButtonPressed(sender: AnyObject) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Edit") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("EditVC") as! UIViewController
             self.presentViewController(viewController, animated: true, completion: nil)
         })
     }
