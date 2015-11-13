@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import Parse
 
-class SellViewController: UIViewController, CLLocationManagerDelegate {
+class SellViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var eventLabel: UITextField!
     @IBOutlet weak var priceLabel: UITextField!
@@ -19,6 +19,8 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        eventLabel.delegate = self
+        priceLabel.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,9 +77,10 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
         priceLabel.text = nil
         
         let alert = UIAlertController(title: "Your Tix Are Online", message: "Wait for Buyers!", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-        presentViewController(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
         
+        presentViewController(alert, animated: true, completion: nil)
+    
     }
     
     @IBAction func userInfoPuttonPressed(sender: AnyObject) {
@@ -85,5 +88,12 @@ class SellViewController: UIViewController, CLLocationManagerDelegate {
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileFirst") as! UIViewController
             self.presentViewController(viewController, animated: true, completion: nil)
         })
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }

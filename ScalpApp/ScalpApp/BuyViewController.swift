@@ -20,16 +20,19 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     var didFindMyLocation = false
     var ticketInfoArray = [PFObject]()
     var usersArray = [PFObject]()
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         viewMap.delegate = self
         
         placeTicketParker()
-        viewMap.reloadInputViews()
+        //viewMap.reloadInputViews()
+//        super.viewDidLoad()
+//        self.refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+//        self.refresh()
     }
 
     override func didReceiveMemoryWarning() {
@@ -130,4 +133,19 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             self.presentViewController(viewController, animated: true, completion: nil)
         })
     }
+    
+    @IBAction func refreshButtonPressed(sender: AnyObject) {
+        reloadMapViewWhenTicketAdded()
+    }
+    
+    func reloadMapViewWhenTicketAdded(){
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        viewMap.delegate = self
+        placeTicketParker()
+        viewMap.reloadInputViews()
+      }
+//    func refresh() {
+//        self.reloadMapViewWhenTicketAdded()
+//    }
 }

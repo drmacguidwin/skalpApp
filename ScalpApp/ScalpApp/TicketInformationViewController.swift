@@ -63,6 +63,10 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
         }
     }
     
+    func sendMessageToSeller() {
+        
+    }
+    
     @IBAction func buyTicketsButtonPressed(sender: AnyObject) {
         let alert = UIAlertController(title: "If You Have Exchanged Tickets With the Seller", message: "Press 'Buy' To Complete Transaction!", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "BUY", style: UIAlertActionStyle.Default, handler: { action in
