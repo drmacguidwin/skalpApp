@@ -94,7 +94,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
                         marker.title = event as? String
                         marker.snippet = price as? String
                         //marker.icon = GMSMarker.markerImageWithColor(UIColor.blueColor())
-                        marker.icon = UIImage(named: "ticketx2")
+                        marker.icon = UIImage(named: "ticket50.png")
                         marker.map = self.viewMap
                         marker.userData = userNameAndObjectID
                         //marker.opacity = 0.0

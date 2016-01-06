@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		30E52F980E1ADA2EF908E75A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E06FE66633E713385185590 /* libPods.a */; };
-		BA4C2DE11BF456F600291AEF /* ticketx1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4C2DDE1BF456F600291AEF /* ticketx1.png */; settings = {ASSET_TAGS = (); }; };
-		BA4C2DE21BF456F600291AEF /* ticketx2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4C2DDF1BF456F600291AEF /* ticketx2.png */; settings = {ASSET_TAGS = (); }; };
-		BA4C2DE31BF456F600291AEF /* ticketx4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4C2DE01BF456F600291AEF /* ticketx4.png */; settings = {ASSET_TAGS = (); }; };
-		BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B901BE9109100E3BC04 /* SellViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BACFA9FB1BF271DA0057F3BF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FA1BF271DA0057F3BF /* UserInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BACFA9FD1BF273500057F3BF /* UserTicketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FC1BF273500057F3BF /* UserTicketListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BACFA9FF1BF2748F0057F3BF /* EditUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FE1BF2748F0057F3BF /* EditUserInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BACFAA011BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFAA001BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift */; settings = {ASSET_TAGS = (); }; };
-		BACFAA031BF2F9150057F3BF /* NavBarViewControllerForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFAA021BF2F9150057F3BF /* NavBarViewControllerForProfile.swift */; settings = {ASSET_TAGS = (); }; };
-		BAE1C3341BEBDED40019FD70 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3331BEBDED40019FD70 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		BAE1C3361BEBDEE00019FD70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3351BEBDEE00019FD70 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		7C4B33731C3DD45E0099296C /* ticket25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4B33711C3DD45E0099296C /* ticket25.png */; };
+		7C4B33741C3DD45E0099296C /* ticket50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4B33721C3DD45E0099296C /* ticket50.png */; };
+		BA4F010F1BED52D6009273B6 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */; };
+		BA8A9B8F1BE90F4900E3BC04 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */; };
+		BA8A9B911BE9109100E3BC04 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9B901BE9109100E3BC04 /* SellViewController.swift */; };
+		BACFA9FB1BF271DA0057F3BF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FA1BF271DA0057F3BF /* UserInfoViewController.swift */; };
+		BACFA9FD1BF273500057F3BF /* UserTicketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FC1BF273500057F3BF /* UserTicketListViewController.swift */; };
+		BACFA9FF1BF2748F0057F3BF /* EditUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA9FE1BF2748F0057F3BF /* EditUserInfoViewController.swift */; };
+		BACFAA011BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFAA001BF2F81D0057F3BF /* NavBarViewControllerForLogin.swift */; };
+		BACFAA031BF2F9150057F3BF /* NavBarViewControllerForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFAA021BF2F9150057F3BF /* NavBarViewControllerForProfile.swift */; };
+		BAE1C3341BEBDED40019FD70 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3331BEBDED40019FD70 /* Parse.framework */; };
+		BAE1C3361BEBDEE00019FD70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3351BEBDEE00019FD70 /* Bolts.framework */; };
 		BAE1C3411BEBDF2C0019FD70 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3371BEBDF2C0019FD70 /* AudioToolbox.framework */; };
 		BAE1C3421BEBDF2C0019FD70 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3381BEBDF2C0019FD70 /* CFNetwork.framework */; };
 		BAE1C3431BEBDF2C0019FD70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3391BEBDF2C0019FD70 /* CoreGraphics.framework */; };
@@ -31,8 +30,8 @@
 		BAE1C3481BEBDF2C0019FD70 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C33E1BEBDF2C0019FD70 /* Security.framework */; };
 		BAE1C3491BEBDF2C0019FD70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C33F1BEBDF2C0019FD70 /* StoreKit.framework */; };
 		BAE1C34A1BEBDF2C0019FD70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1C3401BEBDF2C0019FD70 /* SystemConfiguration.framework */; };
-		BAE1C34C1BEBE4E30019FD70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1C34B1BEBE4E30019FD70 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1C34D1BEBF8790019FD70 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BAE1C34C1BEBE4E30019FD70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1C34B1BEBE4E30019FD70 /* LoginViewController.swift */; };
+		BAE1C34E1BEBF8790019FD70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1C34D1BEBF8790019FD70 /* SignUpViewController.swift */; };
 		BAEE8F821BE8012D00DBC188 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8F811BE8012D00DBC188 /* AppDelegate.swift */; };
 		BAEE8F841BE8012D00DBC188 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8F831BE8012D00DBC188 /* ViewController1.swift */; };
 		BAEE8F871BE8012D00DBC188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEE8F851BE8012D00DBC188 /* Main.storyboard */; };
@@ -40,8 +39,8 @@
 		BAEE8F8C1BE8012D00DBC188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEE8F8A1BE8012D00DBC188 /* LaunchScreen.storyboard */; };
 		BAEE8F971BE8012D00DBC188 /* ScalpAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8F961BE8012D00DBC188 /* ScalpAppTests.swift */; };
 		BAEE8FA21BE8012D00DBC188 /* ScalpAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8FA11BE8012D00DBC188 /* ScalpAppUITests.swift */; };
-		BAF661F81BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF661F71BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift */; settings = {ASSET_TAGS = (); }; };
-		BAF661FA1BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF661F91BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift */; settings = {ASSET_TAGS = (); }; };
+		BAF661F81BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF661F71BF4678C00AC93B9 /* NavBarViewControllerForCreateAccount.swift */; };
+		BAF661FA1BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF661F91BF467FC00AC93B9 /* NavBarViewControllerForNameAndNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +62,9 @@
 
 /* Begin PBXFileReference section */
 		0E06FE66633E713385185590 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4B33711C3DD45E0099296C /* ticket25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticket25.png; path = "../../../../skalpApp-master/ScalpApp/ticket25.png"; sourceTree = "<group>"; };
+		7C4B33721C3DD45E0099296C /* ticket50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticket50.png; path = "../../../../skalpApp-master/ScalpApp/ticket50.png"; sourceTree = "<group>"; };
 		936F4BD5A1581558CA3C597C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		BA4C2DDE1BF456F600291AEF /* ticketx1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticketx1.png; path = ../../../../../../../Desktop/ticketx1.png; sourceTree = "<group>"; };
-		BA4C2DDF1BF456F600291AEF /* ticketx2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticketx2.png; path = ../../../../../../../Desktop/ticketx2.png; sourceTree = "<group>"; };
-		BA4C2DE01BF456F600291AEF /* ticketx4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticketx4.png; path = ../../../../../../../Desktop/ticketx4.png; sourceTree = "<group>"; };
 		BA4F010E1BED52D6009273B6 /* TicketInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
 		BA8A9B8E1BE90F4900E3BC04 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		BA8A9B901BE9109100E3BC04 /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
@@ -148,9 +146,8 @@
 		BA4C2DDD1BF456D800291AEF /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				BA4C2DDE1BF456F600291AEF /* ticketx1.png */,
-				BA4C2DDF1BF456F600291AEF /* ticketx2.png */,
-				BA4C2DE01BF456F600291AEF /* ticketx4.png */,
+				7C4B33711C3DD45E0099296C /* ticket25.png */,
+				7C4B33721C3DD45E0099296C /* ticket50.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -388,11 +385,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA4C2DE11BF456F600291AEF /* ticketx1.png in Resources */,
 				BAEE8F8C1BE8012D00DBC188 /* LaunchScreen.storyboard in Resources */,
-				BA4C2DE21BF456F600291AEF /* ticketx2.png in Resources */,
-				BA4C2DE31BF456F600291AEF /* ticketx4.png in Resources */,
 				BAEE8F891BE8012D00DBC188 /* Assets.xcassets in Resources */,
+				7C4B33741C3DD45E0099296C /* ticket50.png in Resources */,
+				7C4B33731C3DD45E0099296C /* ticket25.png in Resources */,
 				BAEE8F871BE8012D00DBC188 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
