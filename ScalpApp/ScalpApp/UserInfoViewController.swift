@@ -28,7 +28,7 @@ class UserInfoViewController: UIViewController {
     }
     func presentProfileInformation() {
         
-        var query = PFUser.query()
+        let query = PFUser.query()
         //query?.whereKey("objectID", equalTo: (PFUser.currentUser()?.objectId!)!)
         query?.whereKey("username", equalTo: (PFUser.currentUser()?.username!)!)
         //ABOVE LINE WAS THE KEY CHANGE....
@@ -53,21 +53,21 @@ class UserInfoViewController: UIViewController {
     @IBAction func logOutButtonPressed(sender: AnyObject) {
         PFUser.logOut()
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginFirst") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginFirst") 
             self.presentViewController(viewController, animated: true, completion: nil)
         })
     }
     
     @IBAction func returnToSkalpApp(sender: AnyObject) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") 
             self.presentViewController(viewController, animated: true, completion: nil)
         })
     }
     
     @IBAction func editProfileButtonPressed(sender: AnyObject) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("EditVC") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("EditVC") 
             self.presentViewController(viewController, animated: true, completion: nil)
         })
     }

@@ -27,7 +27,7 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         displayGameInfo.text = eventInfo
         displayGamePrice.text = eventPrice
-        displaySellerName.text = sellerInfo[0] as! String
+        displaySellerName.text = sellerInfo[0] as? String
         print(sellerInfo[1])
         
     }
@@ -38,13 +38,13 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
 
     @IBAction func userInfoButtonPressed(sender: AnyObject) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileFirst") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileFirst") 
             self.presentViewController(viewController, animated: true, completion: nil)
         })
     }
     
     func findAndDeleteRowInParse() {
-        var query = PFQuery(className:"TicketInformationClass")
+        let query = PFQuery(className:"TicketInformationClass")
         query.findObjectsInBackgroundWithBlock { (tickets: [PFObject]?,error: NSError?) -> Void in
             if error == nil {
                 let objectIdString:String = self.sellerInfo[1] as! String
@@ -74,7 +74,7 @@ class TicketInformationViewController: UIViewController, GMSMapViewDelegate {
             self.findAndDeleteRowInParse()
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as! UIViewController
+                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") 
                 self.presentViewController(viewController, animated: true, completion: nil)
             })
         }))

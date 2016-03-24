@@ -65,22 +65,22 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     }
     //This function takes the information input from the seller, pulls it from Parse and creates a marker on buyer side map
     func placeTicketParker() {
-        var query = PFQuery(className:"TicketInformationClass")
+        let query = PFQuery(className:"TicketInformationClass")
         query.includeKey("soldBy")
         query.findObjectsInBackgroundWithBlock { (tickets: [PFObject]?,error: NSError?) -> Void in
             if error == nil {
                 if let tickets = tickets as? [PFObject]! {
                     for ticket in tickets {
                         
-                        var user = ticket["soldBy"]
-                        var userName = user["name"]!
-                        var lat = ticket["latitude"]
-                        var long = ticket["longitude"]
-                        var event = ticket["event"]
-                        var price = ticket["price"]
-                        var status = ticket["status"] as! Bool
-                        var objectid = ticket.objectId
-                        var userNameAndObjectID = [userName!, objectid!]
+                        let user = ticket["soldBy"]
+                        let userName = user["name"]!
+                        let lat = ticket["latitude"]
+                        let long = ticket["longitude"]
+                        let event = ticket["event"]
+                        let price = ticket["price"]
+                        let status = ticket["status"] as! Bool
+                        let objectid = ticket.objectId
+                        let userNameAndObjectID = [userName!, objectid!]
                         print(userNameAndObjectID)
                         print(objectid)
                         
@@ -89,7 +89,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
                         print(userName!)
                         if status == false {
                         
-                        var marker = GMSMarker()
+                        let marker = GMSMarker()
                         marker.position = CLLocationCoordinate2DMake((lat as? Double)!, (long as? Double)!)
                         marker.title = event as? String
                         marker.snippet = price as? String
@@ -109,9 +109,9 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
 
     //segues to the TicketInformationViewController when the marker window is tapped
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
-        var markerTitle = marker.title
-        var markerSnippet = marker.snippet
-        var markerSeller = marker.userData
+        let markerTitle = marker.title
+        let markerSnippet = marker.snippet
+        //var markerSeller = marker.userData
         print(markerTitle)
         print(markerSnippet)
         performSegueWithIdentifier("segueToBuyTickets", sender: marker)
@@ -120,7 +120,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let selectedMarker = sender
         if (segue.identifier == "segueToBuyTickets") {
-        var yourNextViewController = segue.destinationViewController as! TicketInformationViewController
+        let yourNextViewController = segue.destinationViewController as! TicketInformationViewController
             yourNextViewController.eventInfo = (selectedMarker?.title)!
             yourNextViewController.eventPrice = (selectedMarker?.snippet)!
             yourNextViewController.sellerInfo = (selectedMarker?.userData)! as! NSArray //as! String
@@ -129,7 +129,7 @@ class BuyViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     //I changed the name of the button so it is a bit confusing, but this sends us to our 'user profile' vc
     @IBAction func userInfoMenuButtonPressed(sender: AnyObject) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileFirst") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileFirst") 
             self.presentViewController(viewController, animated: true, completion: nil)
         })
     }

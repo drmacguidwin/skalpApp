@@ -38,8 +38,8 @@ class UserTicketListViewController: UITableViewController {
                         print("*********")
                         print(self.usersTickets.count)
                         for ticketsForSale in self.usersTickets {
-                            var ticketPrice = ticketsForSale.objectForKey("price") as? String
-                            var eventName = ticketsForSale.objectForKey((("event") as? String)!)
+                            let ticketPrice = ticketsForSale.objectForKey("price") as? String
+                            let eventName = ticketsForSale.objectForKey((("event") as? String)!)
                             print(ticketPrice!)
                             print(eventName!)
                             

@@ -15,7 +15,7 @@ class ViewController1: UITabBarController {
     override func viewWillAppear(animated: Bool) {
         if (PFUser.currentUser() == nil) {
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginFirst") as! UIViewController
+                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginFirst") 
                 self.presentViewController(viewController, animated: true, completion: nil)
             })
         }
